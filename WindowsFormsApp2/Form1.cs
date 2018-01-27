@@ -26,7 +26,7 @@ namespace WindowsFormsApp2
 
         private void InputTextbox_TextChanged(object sender, EventArgs e)
         {
-           // this.MessageButton.Enabled = !string.IsNullOrEmpty(this.InputTextbox.Text);
+          
             if (string.IsNullOrEmpty(this.InputTextbox.Text) == false)
                 this.MessageButton.Enabled = true;
             else
