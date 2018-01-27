@@ -20,7 +20,7 @@ namespace WindowsFormsApp2
 
         private void MessageButton_Click(object sender, EventArgs e)
         {
-            this.DisplayLabel.Text = "Hello " + this.InputTextbox.Text;
+            this.DisplayLabel.Text = "hello " + this.InputTextbox.Text;
             comboBox1.Items.Add("Hello " + this.InputTextbox.Text);
         }
 
