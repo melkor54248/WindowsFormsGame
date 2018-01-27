@@ -45,7 +45,7 @@ namespace WindowsFormsApp2
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("Value changed. new value is "+comboBox1.SelectedItem );
+            MessageBox.Show("Value changed. New value is "+comboBox1.SelectedItem );
         }
     }
 }
