@@ -26,7 +26,7 @@ namespace WindowsFormsApp2
 
         private void InputTextbox_TextChanged(object sender, EventArgs e)
         {
-          
+
             if (string.IsNullOrEmpty(this.InputTextbox.Text) == false)
                 this.MessageButton.Enabled = true;
             else
@@ -46,6 +46,11 @@ namespace WindowsFormsApp2
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             MessageBox.Show("Value changed. New value is "+comboBox1.SelectedItem );
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
