@@ -35,7 +35,7 @@ namespace WindowsFormsApp2
 
         private void MessageButton_MouseHover(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.Cross;
+            this.Cursor = Cursors.Hand;
         }
 
         private void MessageButton_MouseLeave(object sender, EventArgs e)
