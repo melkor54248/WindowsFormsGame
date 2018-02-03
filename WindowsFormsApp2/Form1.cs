@@ -70,12 +70,25 @@ namespace WindowsFormsApp2
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            if (questions==1 && !string.IsNullOrEmpty(UserInput.Text))
+            MainScreen.Text = "";
+            if (questions == 1 && !string.IsNullOrEmpty(UserInput.Text))
             {
                 myHero.Name = UserInput.Text;
                 CreateCharacter(myHero);
                 questions++;
                 ConfessQuestion();
+            }
+            else if (questions == 2 && !string.IsNullOrEmpty(UserInput.Text))
+            {
+                if (UserInput.Text == "1")
+                { }
+                else if (UserInput.Text == "2")
+                {
+                    if (myHero.Strength > 18)
+                    { }
+                    else { }
+                }
+
             }
 
         }
