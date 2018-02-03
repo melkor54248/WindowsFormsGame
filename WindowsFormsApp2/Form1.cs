@@ -18,15 +18,29 @@ namespace WindowsFormsApp2
             StartGame();
         }
         public Hero myHero;
+        int questions=1;
         private void StartGame()
         {
             MainScreen.Text += "The tower of horrors!!!"+Environment.NewLine;
             myHero = new Hero();
             if(string.IsNullOrEmpty(myHero.Name))
                 MainScreen.Text += "What's your character's name" + Environment.NewLine;
-            
-        }
 
+            
+               
+          
+        }
+        public void ConfessQuestion()
+        {
+            MainScreen.Text += @"Hello mighty " + myHero.Name + Environment.NewLine +
+                   "The tower of horrors is really cold this time of year..." + Environment.NewLine +
+                    "You wake up in your cold cell.Freezing...You feel really sick" + Environment.NewLine +
+                    "The guard enters our cell." + Environment.NewLine +
+                   "Confess he shouts." + Environment.NewLine +
+                  " What do you do? "+Environment.NewLine+
+                  "Press 1 to confess. Press 2 to try to break your bonds.";
+
+        }
         public  void CreateCharacter(Hero hero)
         {
             
@@ -56,10 +70,12 @@ namespace WindowsFormsApp2
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(myHero.Name) && !string.IsNullOrEmpty(UserInput.Text))
+            if (questions==1 && !string.IsNullOrEmpty(UserInput.Text))
             {
                 myHero.Name = UserInput.Text;
                 CreateCharacter(myHero);
+                questions++;
+                ConfessQuestion();
             }
 
         }
