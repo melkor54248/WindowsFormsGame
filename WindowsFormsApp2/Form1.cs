@@ -33,7 +33,7 @@ namespace WindowsFormsApp2
         public void ConfessQuestion()
         {
             MainScreen.Text += @"Hello mighty " + myHero.Name + Environment.NewLine +
-                   "The tower of horrors is really cold this time of year..." + Environment.NewLine +
+                   "The Tower of horrors is really cold this time of year..." + Environment.NewLine +
                     "You wake up in your cold cell.Freezing...You feel really sick" + Environment.NewLine +
                     "The guard enters our cell." + Environment.NewLine +
                    "Confess he shouts." + Environment.NewLine +
