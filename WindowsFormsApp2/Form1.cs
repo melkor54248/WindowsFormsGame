@@ -21,7 +21,7 @@ namespace WindowsFormsApp2
         int questions=1;
         private void StartGame()
         {
-            MainScreen.Text += "The tower of horrors!!!"+Environment.NewLine;
+            MainScreen.Text += "The Tower of Horrors!!!"+Environment.NewLine;
             myHero = new Hero();
             if(string.IsNullOrEmpty(myHero.Name))
                 MainScreen.Text += "What's your character's name" + Environment.NewLine;
