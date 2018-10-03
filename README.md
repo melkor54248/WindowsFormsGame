@@ -1,2 +1,2 @@
 # WindowsFormsGame
-Demo windows forms project for C# course
+This is a demo windows forms project for a C# course
